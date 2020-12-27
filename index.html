@@ -8,14 +8,14 @@
   <link>
   <title>SneSyn's portfolio</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
-    integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
+        
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-  <header>
-    <div class="logo"><img src="img/devjane.png" alt="Logo image"></div>
+  <header class="header">
+    <div class="logo">snesyn</div>
     <button class="nav-toggle" aria-label="toggle-navigation"><span class="nav-toggle_button"></span></button>
     <nav class="nav">
       <ul class="nav__list">
@@ -29,50 +29,51 @@
   </header>
   <main>
     <section class="intro section" id="home">
-      <h1 class="section__title section__title--intro">Hi, I am <strong>SneSyn</strong></h1>
+      <h1 class="section__title section__title--intro heading-primary">Hi, I am<br>
+        <strong class="strong">SneSyn</strong></h1>
       <p class="section__subtitle section__subtitle--intro">front-end dev</p>
       <img src="img/sne.jpeg" alt="SneSyn's photo" class="intro__image">
     </section>
     <section class="services section" id="services">
-      <h2 class="section__title section__title--services">What I Do</h2>
+      <h2 class="section__title section__title--services heading-secondary">What I Do</h2>
       <ul class="services__list">
         <li class="services__item">
-          <h3>HTML + CSS</h3>
+          <h3 class="heading-tertiary">HTML + CSS</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
             dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
             ea commodo consequat.</p>
         </li>
         <li class="services__item">
-          <h3>Vanilla JavaScript</h3>
+          <h3 class="heading-tertiary">Vanilla JavaScript</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
             dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
             ea commodo consequat.</p>
         </li>
         <li class="services__item">
-          <h3>JS Frameworks</h3>
+          <h3 class="heading-tertiary">JS Frameworks</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
             dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
             ea commodo consequat.</p>
         </li>
       </ul>
-      <a href="#" class="services__btn btn"></a>
+      <a href="#projects" class="services__btn btn">My Pet Projects</a>
     </section>
     <section class="about section" id="about">
-      <h2 class="section__title section__title--about">Who I Am</h2>
+      <h2 class="section__title section__title--about heading-secondary">Who I Am</h2>
       <p class="section__subtitle section__subtitle--about">Ut enim ad minim veniam</p>
       <div class="about__text">
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
           magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
           consequat.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-          consequat.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat.</p>
       </div>
       <img class="about__image" src="img/sne-2.jpeg" alt="Person is smiling">
     </section>
     <section class="projects section" id="projects">
-      <h2 class="section__title">My Pet Projects</h2>
-      <p class="section__subtitle"></p>
+      <h2 class="section__title heading-secondary">My Pet Projects</h2>
+      <p class="section__subtitle section__subtitle--projects">Lorem ipsum dolor sit amet</p>
       <ul class="portfolio">
         <li class="portfolio__item">
           <a href="#" class="portfolio__link">
@@ -127,20 +128,20 @@
       </ul>
     </section>
   </main>
-  <footer>
+  <footer class="footer">
     <a href="mailto:hello@jane.dev" class="footer__link">sne.syn.mail@gmail.com</a>
     <ul class="social-list">
       <li class="social-list__item">
-        <a class="social-list__link" href="https://www.linkedin.com">a</a>
+        <a class="social-list__link" href="https://www.linkedin.com" target="_blank"><span class="sr-only">Linkedin</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="#16e0bd"><rect width="24" height="24" fill="transparent"/><path d="M3.74 15.92H.42V6h3.32zM2.08 4.07a2 2 0 112-2 2 2 0 01-2 2zm13.83 11.85h-3.32V10a1.66 1.66 0 10-3.32 0v5.87H6V6h3.27v1.28A3.57 3.57 0 0112 5.73a3.92 3.92 0 013.87 3.88z"/></svg></a>
       </li>
       <li class="social-list__item">
-        <a class="social-list__link" href="https://www.facebook.com/snezhana.singur">c</a>
+        <a class="social-list__link" href="https://www.facebook.com/snezhana.singur" target="_blank"><span class="sr-only">Facebook</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"><rect width="24" height="24" fill="transparent"/><path d="M8.94 15.84H6V7.92H4V5.19h2V3.58C6 1.35 6.58 0 9.2 0h2.18v2.73H10c-1 0-1.07.38-1.07 1.09v1.37h2.45l-.28 2.73H8.94z" fill="#16e0bd"/></svg></a>
       </li>
       <li class="social-list__item">
-        <a class="social-list__link" href="https://newgit.anadea.co/sss">b</a>
+        <a class="social-list__link" href="tg://resolve?domain=Sne_Syn" target="_blank"><span class="sr-only">Telegram</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"><rect width="24" height="24" fill="transparent"/><path d="M17.69.14L.51 6.84A.63.63 0 00.56 8l4.36 1.32 1.63 5.18a.75.75 0 001.25.3l2.26-2.31 4.43 3.25a.92.92 0 001.45-.56l2.93-14A.88.88 0 0017.69.14zm-2.16 3.12l-8 7.06a.43.43 0 00-.14.27l-.29 2.74a.08.08 0 01-.16 0L5.68 9.27a.43.43 0 01.18-.49l9.42-5.85a.21.21 0 01.25.33z" fill="#16e0bd"/></svg></a>
       </li>
       <li class="social-list__item">
-        <a class="social-list__link" href="https://github.com/sne-syn">d</a>
+        <a class="social-list__link" href="https://github.com/sne-syn" target="_blank"><span class="sr-only">GitHub</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"><rect width="24" height="24" fill="transparent"/><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" fill="#16e0bd"/></svg></a>
       </li>
     </ul>
   </footer>
